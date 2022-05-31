@@ -12,12 +12,14 @@ namespace Escritura_Archivos
         static void Main(string[] args)
         {
             StreamWriter sw = new StreamWriter("ejemplo.txt",true);
-
-            string[] lines = {
-                "Esta es la nueva escritura",
-                "Esta es la segunda linea",
-                "Fin del texto"
+            string nom;
+            Console.Write("Ingresa un nombre: ");
+            nom = Console.ReadLine();
+            string[] lines =
+            {
+                nom
             };
+            
             foreach(string line in lines)
             {
                 sw.WriteLine(line);//escribe en el archivo
