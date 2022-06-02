@@ -1,2 +1,7 @@
 13	VMW	2017	-
 VERSA	NISSAN	2020	PEDRO
+Registro del auto 
+Modelo: Accord
+Marca: Honda
+Año: 2010
+Propietario: Olga

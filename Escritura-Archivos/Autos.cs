@@ -17,5 +17,10 @@ namespace Escritura_Archivos
             this.ano = ano;
             this.dueno = dueno;
         }
+        public string desplegarDatos()
+        {
+            return ("Registro del auto " + "\nModelo: " + nombre + "\nMarca: " + marca + "\nAño: " + ano + "\nPropietario: " + dueno);
+
+        }
     }
 }

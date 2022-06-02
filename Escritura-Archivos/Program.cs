@@ -23,7 +23,7 @@ namespace Escritura_Archivos
             Console.Write("Ingresa el propietario del auto: ");
             due = Console.ReadLine();
             Autos a1 = new Autos(nom, mar, ano, due);
-            sw.WriteLine(a1.nombre + "\t" + a1.marca + "\t" + a1.ano + "\t" + a1.dueno);//escribe en el archivo
+            sw.WriteLine(a1.desplegarDatos());//escribe en el archivo
             
             sw.Close();//se cierra el archivo
             Console.WriteLine("Escribiendo en el archivo...");
