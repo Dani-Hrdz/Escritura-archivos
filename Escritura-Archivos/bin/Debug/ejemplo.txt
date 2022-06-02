@@ -1,3 +1,2 @@
-Olga
-daniela
-Pedro
+13	VMW	2017	-
+VERSA	NISSAN	2020	PEDRO

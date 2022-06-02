@@ -12,18 +12,19 @@ namespace Escritura_Archivos
         static void Main(string[] args)
         {
             StreamWriter sw = new StreamWriter("ejemplo.txt",true);
-            string nom;
-            Console.Write("Ingresa un nombre: ");
+            string nom, mar, due;
+            int ano;
+            Console.Write("Ingresa el modelo del auto: ");
             nom = Console.ReadLine();
-            string[] lines =
-            {
-                nom
-            };
+            Console.Write("Ingresa la marca del auto: ");
+            mar = Console.ReadLine();
+            Console.Write("Ingresa el año del auto: ");
+            ano = int.Parse(Console.ReadLine());
+            Console.Write("Ingresa el propietario del auto: ");
+            due = Console.ReadLine();
+            Autos a1 = new Autos(nom, mar, ano, due);
+            sw.WriteLine(a1.nombre + "\t" + a1.marca + "\t" + a1.ano + "\t" + a1.dueno);//escribe en el archivo
             
-            foreach(string line in lines)
-            {
-                sw.WriteLine(line);//escribe en el archivo
-            }
             sw.Close();//se cierra el archivo
             Console.WriteLine("Escribiendo en el archivo...");
             Console.ReadLine();
